@@ -157,7 +157,7 @@ class _PongState extends State<Pong> with SingleTickerProviderStateMixin {
       title: Text('Game Over'),
       content: Text('Would you like to paly again?'),
       actions: [
-        FlatButton(
+        TextButton(
             onPressed: () {
               setState(() {
                 posY = 0;
@@ -168,7 +168,7 @@ class _PongState extends State<Pong> with SingleTickerProviderStateMixin {
               controller.repeat();
             },
             child: Text("Yes")),
-        FlatButton(
+        TextButton(
             onPressed: (){
               Navigator.of(context).pop();
               dispose();
